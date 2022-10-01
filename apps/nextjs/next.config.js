@@ -1,5 +1,5 @@
 const isNext12 = (config) =>
-  Boolean(config.module.rules.find((rule) => rule.oneOf));
+  Boolean(config.module.rules.some((rule) => rule.oneOf));
 
 const updateNextGreaterThan12Config = (config) => {
   const oneOfRule = config.module.rules.find((rule) => rule.oneOf);
@@ -28,6 +28,7 @@ const updateNextLessThan12Config = (config) => {
   return config;
 };
 
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   /**
    * You can use the following experimental flag if you're on Next >= 10.1.0.

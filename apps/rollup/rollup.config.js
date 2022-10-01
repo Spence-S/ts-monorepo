@@ -1,7 +1,7 @@
 import typescript from '@rollup/plugin-typescript';
 import pkg from './package.json';
 
-export default [
+const conf = [
   {
     input: 'src/index.tsx',
     external: Object.keys(pkg.dependencies),
@@ -13,3 +13,5 @@ export default [
     output: [{dir: './dist', format: 'cjs', sourcemap: true}],
   },
 ];
+
+export default conf;

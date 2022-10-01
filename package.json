@@ -15,14 +15,19 @@
   },
   "devDependencies": {
     "doctoc": "~2.2.0",
+    "eslint-config-xo": "^0.42.0",
+    "eslint-config-xo-react": "^0.27.0",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "typescript": "~4.7.0",
     "xo": "^0.52.3"
   },
   "pnpm": {
     "peerDependencyRules": {
-      "allowedVersions": {
-        "react-scripts": "^5.0.0"
-      }
+      "ignoreMissing": [
+        "eslint",
+        "webpack"
+      ]
     }
   }
 }

@@ -1,4 +1,13 @@
 {
   "prettier": true,
-  "space": true
+  "space": true,
+  "rules": {
+    "import/extensions": "off"
+  },
+  "overrides": [
+    {
+      "files": ["apps/{nextjs|storybook|rollup}/**/*.{ts|js|tsx|jsx}"],
+      "extends": "xo-react"
+    }
+  ]
 }
