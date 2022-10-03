@@ -1,0 +1,5 @@
+{
+  "*.md,!test/**/*.md": "prettier --check",
+  "**/package.json": "prettier --check",
+  "**/*.(js|ts)": "xo --fix"
+}
